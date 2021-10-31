@@ -11,6 +11,14 @@ p, p1 {
     font-style: normal;
 }
 
+body{
+    width: 100%;
+}
+
+::placeholder {
+    color: #fff;
+}
+
 #interface {
     position: fixed;
     z-index: 10;
@@ -126,14 +134,18 @@ p, p1 {
 #head{
     width: 50px;
     height: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    position: relative;
+    left: -5px;
+    bottom: 9px;
     padding: 0;
 }
 
 #bgColor{
     width: 50px;
     position: relative;
-    left: -10px;
+    left: -15px;
+    bottom: 11px;
     font-size: 11px!important; 
 }
 
@@ -192,12 +204,14 @@ p, p1 {
     border-bottom: 2px solid #000;
 }
 
-#package {
-    width: auto;
-    height: 70%;
+#myContainer {
+    width: 70%;
+    height: auto;
     position: absolute;
     top: 0;
-    right: 20;
+    right: 0;
+    padding-right: 10px;
+    background: #fff;
 }
 
 
@@ -216,7 +230,7 @@ input[type="range"] {
 }
 
 ::-webkit-slider-runnable-track {
-    background: #ddd;
+    background: #fff;
 }
 
 /*
@@ -226,18 +240,18 @@ input[type="range"] {
     -webkit-appearance: none;
     width: 18px; /* 1 */
     height: 18px;
-    background: #fff;
+    background: #000;
     box-shadow: -100vw 0 0 100vw black;
     border: 2px solid #ddd; /* 1 */
 }
 
 ::-moz-range-track {
     height: 40px;
-    background: #ddd;
+    background: #fff;
 }
 
 ::-moz-range-thumb {
-    background: #fff;
+    background: #000;
     height: 18px;
     width: 18px;
     border: 3px solid #ddd;
@@ -251,7 +265,7 @@ input[type="range"] {
 }
 
 ::-ms-thumb { 
-    background: #fff;
+    background: #000;
     border: 2px solid #ddd;
     height: 18px;
     width: 18px;
@@ -267,7 +281,7 @@ input[type="range"] {
 }
 
 ::-ms-track { 
-    background: #ddd;
+    background: #fff;
     color: transparent;
     height: 18px;
     border: none;

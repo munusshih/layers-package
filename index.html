@@ -1,29 +1,86 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>Layers Package Generator - Munus Shih</title>
+
     <script src="https://cdn.jsdelivr.net/npm/p5@vv1.4.0/lib/p5.js" type="text/javascript"></script>
     <script src="preload.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://use.typekit.net/fbj4myu.css">
     <link rel="stylesheet" type="text/css" href="main.css">
 
-    <meta charset="UTF-8">
     <meta name="description"
         content="The generator is designed and coded by Munus Shih, 2021, Advised by Talia Cotton, Justin Bakse in 'Algo Print'">
     <meta name="author" content="Munus Shih">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="Layers Package Generator - Munus Shih">
-    <meta property="og:description" content="The generator is designed and coded by Munus Shih, 2021, Advised by Talia Cotton, Justin Bakse in 'Algo Print'">
+    <meta property="og:description"
+        content="The generator is designed and coded by Munus Shih, 2021, Advised by Talia Cotton, Justin Bakse in 'Algo Print'">
     <meta property="og:image" content="https://munusshih.github.io/layers-package/screenshot.png">
     <meta property="og:url" content="https://munusshih.github.io/layers-package">
 </head>
 
 <body>
 
+    <div id="interface">
+        <h1>Layers Package Generator</h1>
+
+        <div class="flexc">
+            <h3>Customized Skincare Product</h3>
+            <button id="download">download</button>
+        </div>
+
+        <div class="typing">
+            <h2 id="nameH">Customer's Name</h2>
+            <input type="text" id="fname" class="typer" placeholder="ex. Munus Shih">
+        </div>
+        <div class="typing">
+            <h2 id="nameH">Version</h2>
+            <input type="text" id="version" class="typer" placeholder="ex. 1">
+        </div>
+        <div class="typing">
+            <div class="flexa">
+                <h2 id="productH">Product</h2>
+                <input type="text" id="fproduct" class="typer" placeholder="ex. Nourish + Hydrate Skin Oil">
+            </div>
+            <div class="flexb">
+                <input type="color" id="head" name="head" value="#000000">
+                <p id="bgColor">rgba (0, 0, 0)</p>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="flex">
+            <h2 id="box">Box Size</h2>
+            <p1>Width</p1>
+            <input type="range" class="range-style" id="width" name="width" min="3" max="5" value="4" step="0.25">
+            <p id="cwidth"> 4 inches</p>
+        </div>
+
+        <div class="flex">
+            <p1>Height</p1>
+            <input type="range" class="range-style" id="height" name="height" min="3" max="5" value="4" step="0.25">
+            <p id="cheight"> 4 inches</p>
+        </div>
+
+        <div class="flex">
+
+            <p1>Thick</p1>
+            <input type="range" class="range-style" id="thick" name="thick" min="2.5" max="5" value="4" step="0.25">
+            <p id="cthick"> 4 inches</p>
+        </div>
+
+        <div id="final">
+            <p>The generator is designed and coded by Munus Shih, 2021,<br>Advised by Talia Cotton, Justin Bakse in 'Algo
+                Print'</p>
+        </div>
+    </div>
+    <div id="myContainer"></div>
+
+
     <script src="Box.js" type="text/javascript"></script>
-    <script src="adap.js" type="text/javascript">
-    </script>
+    <script src="adap.js" type="text/javascript"></script>
     <script src="front.js" type="text/javascript"></script>
     <script src="top.js" type="text/javascript"></script>
     <script src="left.js" type="text/javascript"></script>
@@ -34,62 +91,6 @@
     <script src="interface.js" type="text/javascript"></script>
     <script src="gluePart.js" type="text/javascript"></script>
     <script src="pointer.js" type="text/javascript"></script>
-
 </body>
-
-<div id="interface">
-    <h1>Layers Package Generator</h1>
-
-    <div class="flexc">
-        <h3>Customized Skincare Product</h3>
-        <button id="download">download</button>
-    </div>
-
-    <div class="typing">
-        <h2 id="nameH">Customer's Name</h2>
-        <input type="text" id="fname" class="typer" placeholder="ex. Munus Shih">
-    </div>
-    <div class="typing">
-        <h2 id="nameH">Version</h2>
-        <input type="text" id="version" class="typer" placeholder="ex. 1">
-    </div>
-    <div class="typing">
-        <div class="flexa">
-            <h2 id="productH">Product</h2>
-            <input type="text" id="fproduct" class="typer" placeholder="ex. Nourish + Hydrate Skin Oil">
-        </div>
-        <div class="flexb">
-            <input type="color" id="head" name="head" value="#000000">
-            <p id="bgColor">rgba (0, 0, 0)</p>
-        </div>
-    </div>
-    <br><br>
-
-    <div class="flex">
-        <h2 id="box">Box Size</h2>
-        <p1>Width</p1>
-        <input type="range" class="range-style" id="width" name="width" min="3" max="5" value="4" step="0.25">
-        <p id="cwidth"> 4 inches</p>
-    </div>
-
-    <div class="flex">
-        <p1>Height</p1>
-        <input type="range" class="range-style" id="height" name="height" min="3" max="5" value="4" step="0.25">
-        <p id="cheight"> 4 inches</p>
-    </div>
-
-    <div class="flex">
-
-        <p1>Thick</p1>
-        <input type="range" class="range-style" id="thick" name="thick" min="2.5" max="5" value="4" step="0.25">
-        <p id="cthick"> 4 inches</p>
-    </div>
-
-    <div id="final">
-        <p>The generator is designed and coded by Munus Shih, 2021, Advised by Talia Cotton, Justin Bakse in 'Algo
-            Print'</p>
-    </div>
-</div>
-<div id="package"></div>
 
 </html>

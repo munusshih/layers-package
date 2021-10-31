@@ -74,9 +74,10 @@ function topBox_draw() {
 	topBox.textLeading(4 * vw);
 
 	if (document.getElementById("thick").value <= 2.75) {
-		topBox.text(product, padding + 7 + 2, padding + 9 +3 , 0.75 * topBox.width)
+		topBox.textLeading(3 * vw);
+		topBox.text(product, padding + 7 + 2, padding + 9 +0 , 0.5 * topBox.width)
 	} else {
-		topBox.text(product, padding + 7 + 2, padding + 9 + 5, 0.75 * topBox.width)
+		topBox.text(product, padding + 7 + 2, padding + 9 + 5, 0.5 * topBox.width)
 	}
 
 	topBox.textSize(min(2.5 * vw, 10))
@@ -97,7 +98,7 @@ function topBox_draw() {
 		topBox.text('1  /  6', 0.78 * topBox.width, padding + 12)
 	} else {
 		topBox.textSize(5 * vw)
-		topBox.text(version+  '  /  6', 0.79 * topBox.width, padding + 16)
+		topBox.text(version+  '  /  6', 0.79 * topBox.width, padding + 18)
 	}
 
 	topBox.stroke(255)

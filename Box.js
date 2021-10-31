@@ -16,7 +16,7 @@ let frontBox, topBox, leftBox, rightBox,
 
 function setup() {
 	let cnv = createCanvas(1000, 1461);
-	cnv.parent('package');
+	cnv.parent('myContainer');
 	background(255)
 
 	interface()
@@ -54,7 +54,7 @@ function draw() {
 		paperColor = 255
 		background(paperColor)
 		interfaceText = 1
-		translate(200, 0)
+		translate(160, 0)
 		scale(0.8)
 	}
 

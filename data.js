@@ -1,7 +1,6 @@
 let dataSum
 let data = []
 let dataProp = []
-let layerColor = ["#310a31","#847996","#88b7b5","#a7cab1","#f4ecd6","#a22c29","#ed6a5a","#e3b23c","#fbaf00","#ffd639","#757780","#d2cca1","#387780","#dbd4d3","#e83151","#d65108","#591f0a","#3f0d12","#a71d31","#251f47"]
 let ingred = ["PEG-7 Glyceryl Cocoate",
 	"propanediol",
 	"glycerin",

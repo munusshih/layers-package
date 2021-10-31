@@ -26,14 +26,14 @@ function interfaceValue() {
 		saver = 1
 	})
 
-	name = document.getElementById("fname").value.toLowerCase();;
-	if (!name) {
-		name = "Under Layers".toLowerCase();
-	}
-
 	version = document.getElementById("version").value;
 	if (!version) {
 		version = "1";
+	}
+
+	name = document.getElementById("fname").value.toLowerCase();;
+	if (!name) {
+		name = "Under Layers".toLowerCase();
 	}
 
 	product = document.getElementById("fproduct").value.toUpperCase();;
