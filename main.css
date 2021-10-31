@@ -298,3 +298,24 @@ input[type="range"] {
     margin-left:0;
     color: #444;
 }
+
+@media only screen and (max-width: 1170px) {
+    #interface{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    #interface{
+        position: static;
+        height: auto;
+        width: 100%;
+    }
+
+    #myContainer{
+        position:relative;
+        height: auto;
+        left: min(-25vw, -250px);
+        width: 100%;
+    }
+}
